@@ -1,0 +1,1106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #F8F8F8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/************* golobal use css ***********/
+.container {
+  /* width: 90%; */
+  max-width: 1140px;
+  min-width: 1140px;
+  margin: 0 auto;
+}
+
+.go_top {
+  display: inline-block;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 30px;
+  background-color: #6FC7D9;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease-in-out;
+}
+
+.go_top:hover {
+  background-color: #7cafb9;
+  transition: 0.5s;
+}
+
+/***************Main css start here***********/
+
+
+/* top header start here */
+
+.topheader {
+  float: left;
+  width: 100%;
+  min-width: 1140px;
+  padding: 10px 0px;
+  background-color: #eee;
+}
+
+.left_topheader {
+  width: 50%;
+  float: left;
+}
+
+.left_topheader span {
+  font-size: 14px;
+  color: #333;
+}
+
+.left_topheader a {
+  font-size: 14px;
+  color: #333;
+  transition: 0.5s;
+}
+
+.left_topheader a:hover {
+  color: #EAA300;
+}
+
+.right_topheader {
+  width: 50%;
+  float: left;
+}
+
+.top_menu {
+  display: block;
+  text-align: right;
+}
+
+.top_menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.top_menu li a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+}
+
+.top_menu li a:hover {
+  color: #EAA300;
+}
+
+/* main header start here */
+
+.mainheader {
+  width: 100%;
+  float: left;
+  padding: 10px 0px;
+  border-bottom: 2px solid #EAA300;
+}
+
+.logo {
+  width: 20%;
+  float: left;
+}
+
+
+
+.logo a img {
+  width: 90%;
+  
+}
+
+.logo .fa {
+  color: #EAA300;
+}
+
+.menu {
+  width: 80%;
+  float: left;
+}
+
+.menu ul {
+  display: block;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.menu ul li a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  margin-left: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.menu ul li a:hover {
+  color: #EAA300;
+}
+
+.btndordownload {
+  background-color: #EAA300;
+  padding: 8px 20px;
+
+}
+
+.menu ul li a.btndordownload:hover {
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 5px 1px black;
+}
+
+.menu ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #EAA300;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 3px);
+  transition: 0.5s;
+}
+
+.menu ul li a.active::after {
+  width: 100%;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+
+}
+
+.menu ul li a.btndordownload:hover::after {
+  width: 0%;
+}
+
+/* banner section start here */
+
+.baner {
+  width: 100%;
+  min-width: 1140px;
+  float: left;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url(../images/imgasepubg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 150px 0px;
+  height: 650px;
+}
+
+.inner_baner {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.inner_baner h1 {
+  font-size: 60px;
+  line-height: 65px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.inner_baner h3 {
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.794);
+  margin-bottom: 30px;
+}
+
+.btnbuynow {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #EAA300;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.btnbuynow:hover {
+  color: #EAA300;
+  border: 1px solid #EAA300;
+  background: transparent;
+}
+
+/* tutorial section star here */
+
+.tutorial {
+  width: 100%;
+  float: left;
+}
+
+.inner_tutorial {
+  width: 100%;
+  float: left;
+  position: relative;
+  top: -150px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(231, 220, 220);
+
+}
+
+.turorial_video {
+  float: left;
+  width: 45%;
+  height: 550px;
+}
+
+.video {
+  width: 100%;
+  height: 550px;
+}
+
+.tutorial_content {
+  width: 55%;
+  float: left;
+  height: 550px;
+}
+
+.tutorial_conteenttop {
+  width: 100%;
+  float: left;
+  background-color: #dee2e0;
+}
+
+.content_item1 {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.content_item1 h3 {
+  display: inline-block;
+  position: relative;
+  margin-left: 30px;
+  text-transform: capitalize;
+}
+
+.content_item1 h3::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -30px;
+  background-color: transparent;
+  border: 2px solid #02412d;
+  border-radius: 50%;
+}
+
+.content_item2 {
+  width: 50%;
+  float: right;
+  text-align: right;
+  padding: 10px;
+}
+
+.content_item2 p {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.content_item2 .fa {
+  color: #02412d;
+  margin-left: 2px;
+}
+
+.tutorial_conteentbot {
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+}
+
+.contentbot_item1 {
+  width: 70%;
+  float: left;
+  padding: 10px;
+}
+
+.contentbot_item2 {
+  width: 20%;
+  float: right;
+  padding: 10px;
+  text-align: right;
+
+}
+
+.name {
+  font-size: 20px;
+  padding: 0px 10px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  position: relative;
+}
+
+.name::after {
+  content: '';
+  width: 255px;
+  height: 1px;
+  background-color: rgb(156, 137, 137);
+  position: absolute;
+  right: -91px;
+  bottom: 8px;
+}
+
+.name1::after {
+  width: 100px;
+  right: -91px;
+}
+
+.best {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #1D9C73;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tutorial_conteentlast {
+  width: 100%;
+  float: left;
+
+}
+
+.tutorial_contentlastleft {
+  float: left;
+  width: 40%;
+  padding: 20px;
+
+}
+
+.contentlastitem1 {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+
+.btnbuynownew {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #1D9C73;
+  transition: 0.5s;
+}
+
+.btnbuynownew:hover {
+  color: #000;
+}
+
+.tutorial_contentlastleft .fa {
+  display: inline-block;
+  color: white;
+  background-color: #02412d;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.tutorial_contentlastright {
+  width: 60%;
+  float: left;
+}
+
+.tutorial_contentlastright p {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 10px 10px;
+}
+
+.tutorial_explain {
+  width: 100%;
+  float: left;
+  margin-top: -70px;
+  background-color: #F8F8F8;
+}
+
+.disocrdapp {
+  width: 40%;
+  float: left;
+}
+
+#discord {
+  width: 97%;
+  height: 600px;
+
+}
+
+.disocrdapp img {
+  width: 97%;
+}
+
+.proveds {
+  width: 60%;
+  float: left;
+  text-align: left;
+}
+
+.proveds h1 {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.proveds h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 42%;
+  height: 2px;
+  background-color: #bac2d1;
+}
+
+.proved_images {
+  width: 100%;
+}
+
+.proved_images img {
+  width: 100%;
+  /* height: 300px; */
+  object-fit: cover;
+  object-position: top;
+}
+
+
+
+/* features section start here */
+
+.features {
+  width: 100%;
+  float: left;
+}
+
+/* comon for all title */
+.titleforallsection {
+  width: 100%;
+  min-width: 1140px;
+  float: left;
+  text-align: center;
+  padding: 35px 0px;
+  background-color: #F8F8F8;
+}
+
+.titleforallsection h1 {
+  font-size: 35px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.titleforallsection p {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.623);
+  text-transform: capitalize;
+}
+
+/* comon for all title  end*/
+
+/* inner feautes */
+
+.inner_features {
+  width: 100%;
+  float: left;
+}
+
+.inneritembox {
+  width: 100%;
+  float: left;
+  margin: 15px 0px;
+}
+
+.innerfeature_item {
+  width: 48%;
+  float: left;
+  background-color: #ffffff;
+  padding: 10px 10px;
+  padding-bottom: 20px;
+  box-shadow: 2px 2px 6px -6px rgb(0, 0, 0);
+  transition: 0.5s;
+
+}
+
+.innerfeature_item:hover {
+
+  box-shadow: 1px 1px 10px 2px rgb(184, 167, 13);
+  /* transform: scale(1.1); */
+
+}
+
+.infeaturesitem2 {
+  float: right;
+  width: 48%;
+}
+
+.leftfeature_itam {
+  float: left;
+  width: 20%;
+  margin-top: 20px;
+  padding: 15px 0px;
+}
+
+.leftfeature_itam .round {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid orchid;
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.leftfeature_itam .round img {
+  width: 90%;
+
+}
+
+.rightfeature_itam {
+  width: 80%;
+  float: left;
+  /* margin-top: 15px; */
+  padding: 15px;
+}
+
+.rightfeature_itam h2 {
+  font-size: 25px;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+  text-align: center;
+}
+
+.rightfeature_itam p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* products section start here */
+
+.produtcs {
+  width: 100%;
+  float: left;
+  padding: 35px 0px;
+}
+
+.innerproducts {
+  width: 100%;
+  float: left;
+  padding: 35px 0px;
+}
+
+.productscards {
+  width: 32%;
+  float: left;
+  background-color: #ffffff;
+
+}
+
+.produtcscardmiddle {
+  margin-left: 23px;
+}
+
+.productscardlast {
+  float: right;
+}
+
+.productscardtop {
+  width: 100%;
+  height: 300px;
+  background-color: violet;
+}
+
+.productscardtop img {
+  width: 100%;
+  height: 300px;
+}
+
+.productscardbot {
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.productscardbot h1 {
+  font-size: 25px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #333;
+  position: relative;
+}
+
+.productscardbot h1::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  background-color: #EAA300;
+  left: 0;
+  top: calc(100% + 2px);
+}
+
+.productscardbot p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+}
+
+.btndownload {
+  display: inline-block;
+  width: max-content;
+  padding: 8px 15px;
+  background-color: transparent;
+  border: 1px solid #EAA300;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #EAA300;
+  margin-top: 22px;
+}
+
+.btndownload:hover {
+  background-color: #EAA300;
+  color: #000000;
+}
+
+
+
+
+/* link section */
+
+.linksec {
+  width: 100%;
+  float: left;
+
+}
+
+.titlerewrite {
+  padding: 10px;
+}
+
+.inner_link {
+  float: left;
+  width: 100%;
+  /* padding: 30px 0px 0px 0px; */
+  /* background-color: rgba(255, 255, 255, 0.933); */
+}
+
+
+.inner_link ul {
+  display: block;
+  text-align: center;
+}
+
+.inner_link ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.inner_link ul li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #365FAF;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px -6px rgb(0, 0, 0);
+  transition: 0.5s;
+  font-size: 30px;
+  line-height: 50px;
+  color: rgb(255, 255, 255);
+  margin-left: 5px;
+  position: relative;
+}
+
+.inner_link ul li a .toll {
+  padding: 0px 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  position: absolute;
+  left: -83%;
+  top: -66px;
+  border-radius: 10px;
+  font-size: 23px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.inner_link ul li a .toll1 {
+  left: -102%;
+}
+
+.toll::after {
+  content: '';
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 43%;
+  top: 40px;
+  transform: rotate(45deg);
+}
+
+.inner_link ul li a:hover {
+  background-color: #22211e;
+}
+
+.inner_link ul li a:hover .toll {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* fotter section */
+
+footer {
+  width: 100%;
+  min-width: 1140px;
+  float: left;
+  margin-top: 20px;
+}
+
+.footerbot {
+  background-color: #000;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.footerbot p {
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+  padding: 0px 0px;
+  text-transform: capitalize;
+}
+
+.footerbot a {
+  text-transform: capitalize;
+  color: #c2bf11;
+  text-decoration: underline;
+}
+
+.footerbot a:hover {
+  color: red;
+}
+
+/* about us page */
+
+.baner {
+  width: 100%;
+  float: left;
+}
+
+.innerminibaner {
+  width: 100%;
+  float: left;
+  min-width: 1140px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url(../images/battlegrounds.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.innerminibaner h1 {
+  font-size: 35px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: rgb(223, 201, 201);
+}
+
+.main_content {
+  width: 100%;
+  float: left;
+}
+
+.inner_maincontent {
+  width: 100%;
+  float: left;
+  padding: 20px;
+}
+
+.maincontent_top {
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.maincontent_top img {
+  width: 90%;
+
+}
+
+.main_contentitem {
+  width: 100%;
+  float: left;
+  border: 1px solid rgb(211, 217, 221);
+  padding: 30px;
+}
+
+.main_title {
+  width: 100%;
+  float: left;
+  border: 1px solid rgb(211, 217, 221);
+  border-bottom: none;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.main_title h1 {
+  font-size: 25px;
+  text-transform: capitalize;
+  color: #365FAF;
+}
+
+.mainitem {
+  width: 100%;
+  float: left;
+  padding: 30px;
+  border-bottom: 1px solid rgb(211, 217, 221);
+}
+
+.mainitem:last-child {
+  border-bottom: none;
+}
+
+.mainitem h2 {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #365FAF;
+  margin: 10px 0px;
+}
+
+.mainitem p {
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* -------------grim section design start here0-------------- */
+
+.download_tool {
+  width: 100%;
+  float: left;
+}
+
+.inner_download_tool {
+  width: 100%;
+  float: left;
+  padding: 30px 0px;
+}
+
+.inner_download_tool h1 {
+  font-size: 30px;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.inner_download_tool small {
+  font-size: 17px;
+  color: #333;
+}
+
+.inner_download_tool small .fa {
+  margin-left: 5px;
+}
+
+.downloadtoolimg {
+  width: 100%;
+  height: 400px;
+  float: left;
+  text-align: center;
+  /* border: 2px solid rgb(12, 127, 221); */
+  padding: 10px;
+}
+
+.downloadtoolimg img {
+  width: 70%;
+  height: 100%;
+}
+
+.buttondiv {
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+
+.downloadtoolbtn {
+
+  padding: 15px 31px;
+  background-color: #EAA300;
+  display: inline-block;
+  color: #333;
+  font-weight: 600;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.downloadtoolbtn:hover {
+  background-color: transparent;
+  border: 1px solid #EAA300;
+}
+
+.downloadtolyt {
+  width: 100%;
+  float: left;
+  height: 400px;
+}
+
+.downloadytleft {
+  width: 70%;
+  float: left;
+}
+
+.downloadytleft iframe {
+  width: 95%;
+  height: 400px;
+}
+
+.downloadytright {
+  width: 30%;
+  float: left;
+}
+
+.ytsub {
+  width: 100%;
+  float: left;
+  /* padding: 20px; */
+  margin: 10px 0px;
+}
+
+.ytsub h1 {
+  font-size: 20px;
+  background-color: #EAA300;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+.ytsub ul {
+  display: block;
+}
+
+.ytsub ul li {
+  list-style: none;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.ytsub ul li a {
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #c80b0b;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: .5s;
+}
+
+.ytsub ul li a:hover {
+  background-color: transparent;
+  border: 1px solid #c80b0b;
+  color: #333;
+}
+
+.flowus {
+  width: 100%;
+  float: left;
+}
+
+.flowus h1 {
+  font-size: 20px;
+  background-color: #EAA300;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+.flowus ul {
+  display: block;
+}
+
+.flowus ul li {
+  list-style: none;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.flowus ul li a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #365FAF;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: .5s;
+}
+
+.flowus ul li a:hover {
+  background-color: transparent;
+  border: 1px solid #365FAF;
+  color: #333;
+}
